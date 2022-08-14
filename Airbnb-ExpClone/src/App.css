@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+  --main-font:'Poppins', sans-serif;
+  /* COLORS */
+  --white:#FFFFFF;
+  --main-bg: #E5E5E5;
+  --black: black;
+  --main-fnt-color: #222222;
+  --sp-fnt-color: #918E9B;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(/src/assets/images/annie-spratt-zA7I5BtFbvw-unsplash.jpg) center/cover;
+  background-color: var(--main-bg);
+  color: var(--main-fnt-color);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+h1{
+  color: var(--black);
+}
+/* APP START */
+.App{
+  width: 550px;
+  height: 853px;
+  background-color: var(--white);
+  border-radius: 8.95px;
+  /* display: flex;
+  flex-flow: column; */
+}
+/* APP END */
+/* HEADER START */
+.main-header{
+  max-width: 100%;
+  height: 70px ;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+
+}
+.header-logo{
+  width: 82px;
+  height: 25.3px;
+}
+/* HEADER END */
+/* HERO START */
+.hero-section{
+  width: 100%;
+}
+.hero-img{
+  margin: 26px auto 0px;
+  display: block;
+  width: 396px;
+  height: 232px;
+
+}
+.Hero-data{
+  margin: 32px 0px 49px 36px;
+  padding: 1px;
+}
+.hero-title{
+  margin: 0;
+  font-size: 36px;
+  line-height: 110%;
+}
+.hero-description{
+  line-height: 110%;
+  max-width: 320px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* HERO END */
+/* EXPERIENCE START */
+.exp-section{
+  display: flex;
+  flex-flow: row;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 34px;
+  
+}
+
+.article-card{
+  height: 302px;
+  width: 177px;
+}
+.img-box {
+  position: relative;
+}
+.status{
+  width: 62px;
+  height: 20px;
+  font-size: 10.25px;
+  background-color: #FFFFFF;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  left: 6px;
+  top: 6px;
+}
+.article-img, .img-box{
+  width: 100%;
+  height: 235px;
+}
+.article-last{
+  width: 125px;
+}
+.article-data{
+  margin-top: 9px;
+}
+.article-review{
+  margin-bottom: 4px;
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--sp-fnt-color);
+}
+.article-review > *{
+  margin: 0;
+}
+.rating{
+  color: var(--main-fnt-color);
+}
+.article-review img:first-of-type{
+  width: 11.5px;
+  height: 11.5px;
+  border-radius: 0.5px;
+  margin-top: -2px;
+
+}
+.article-review img:last-of-type{
+  width: 2px;
+  height: 2px;
+}
+.article-description{
+  font-size: 12px;
+  margin: 0;
+  font-weight: 300;
+  line-height: 110%;
+}
+.article-price{
+  margin-top: 8px;
+}
+/* EXPERIENCE END */
