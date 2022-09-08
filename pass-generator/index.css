@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap');
+
+
+:root{
+    --main-font: 'Inter', sans-serif;
+    --title-font: 'Karla', sans-serif;
+    /* DARK THEME */
+    --mainbg-color: #1F2937;
+    --inputbg: #273549;
+    --hrbg: #2F3E53;
+    --input-text: #55F991;
+    --title-highlight: #4ADF86;
+    --btn-green: #10B981;
+    /* LIGHT THEME */
+    --light-bgColor: #ECFDF5;
+    --Light-title: #1F2937;
+    --ligth-subtitle: #6B7280;
+}
+body, .container{
+    min-height: 100vh;
+    background-color: #1C1C1C;
+}
+.card{
+    width: 550px;
+    height: 550px;
+    padding: 0 52px;
+    background-color: var(--mainbg-color);
+    font-family: var(--main-font);
+    border-radius: 20px;
+}
+.card-body{
+    padding: unset !important;
+}
+.card.light{
+    background-color: var(--light-bgColor);
+}
+.card-title.light{
+    color: var(--Light-title);
+}
+.card-subtitle.light {
+    color: var(--ligth-subtitle);
+}
+.card-title{
+    font-size: 40px;
+    margin-top: 115px;
+    color: white;
+    font-family: var(--title-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.title-highlight{
+    color: var(--title-highlight);
+}
+.card-subtitle{
+    font-size: 20px;
+    color: #D5D4D8;
+    margin-bottom: 51px;
+    letter-spacing: .02em;
+    font-weight: 400;
+}
+.btn-gen-pass, .btn-gen-pass:hover{
+    background-color: var(--btn-green) !important;
+    color: white !important;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 9px 17px 9px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.footer{
+    border-top: 1px solid var(--hrbg);
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.result-pass, .result-pass:hover{
+    background-color: var(--inputbg) !important;
+    color: var(--input-text) !important;
+    width: 211px !important;
+    height: 39px !important;
+    font-size: 16px;
+}
+.result-pass:focus, .result-pass:active{
+    border: none;
+}
+.toggle-btn{
+    background-color: var(--btn-green);
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    top: 5%;
+    right: 52px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-btn img{
+    width: 40px;
+    height: 40px;
+}
