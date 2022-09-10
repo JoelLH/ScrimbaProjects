@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Karla:wght@800&display=swap');
+
+:root{
+    --headerBg : #6943FF;
+    --btnText: #3D3D3D;
+    --bodyBg: #F4F4F4;
+    --unitTitle: #5A537B;
+    --unitText: #353535;
+    --inputBorder: #B295FF;
+    /* FONTS */
+    --mainFont: 'Inter', sans-serif;
+    --headingFont: 'Karla', sans-serif;
+    /* DARK THEME */
+    --dark-bodyBg: #1F2937;
+    --dark-unitBg: #273549;
+    --dark-unitTitle: #CCC1FF;
+    --dark-unitText: #fff;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1C1C1C;
+}
+/* MAIN */
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        max-width: 550px;
+        width: 100%;
+        border: unset;
+    }
+    .card-header{
+        padding: 33px 0;
+        background-color: var(--headerBg);
+        color: white;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        position: relative;
+    }
+    .card-title{
+        font-family: var(--headingFont);
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        letter-spacing: -.05em;
+    }
+    .main-input{
+        width: 117px;
+        height: 83px;
+        border: 2px solid var(--inputBorder);
+        background-color: unset;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--mainFont);
+        font-weight: 800;
+        font-size: 58px;
+        color: white;
+        padding: 0 19px;
+        margin-bottom: 25px;
+    }
+    .main-input:focus{
+        outline: none;
+        border: 2px solid white;
+        animation: borderFlash 1.5s infinite;
+    }
+    @keyframes borderFlash{
+        0% {
+            border: 2px solid var(--inputBorder)
+        }
+        25% {
+                border: 2px solid white;
+            }
+        
+        50% {
+            border: 2px solid var(--inputBorder)
+        }
+        75% {
+                border: 2px solid white;
+            }
+        
+        100% {
+            border: 2px solid var(--inputBorder)
+        }
+    }
+        
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+    .main-input::placeholder{
+        color: var(--inputBorder);
+    }
+    .btn-secondary{
+        background-color: white;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        width: 117px;
+        height: 42px;
+        color: var(--btnText);
+        font-weight: 500;
+    }
+    .btn-secondary:hover{
+        background-color: var(--inputBorder) !important;
+    }
+    .theme-toggle, .theme-toggle img{
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+    .theme-toggle{
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .theme-toggle:hover{
+        opacity: 85%;
+    }
+    /* CARD BODY */
+    .card-body{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bodyBg);
+        gap: 23.5px;
+        padding: 35px 0;
+    }
+    .card-body.dark{
+        background-color: var(--dark-bodyBg);
+    }
+    .unit-wrapper{
+        width: 500px;
+        text-align: center;
+        height: 109px;
+        background-color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+    }
+    .unit-wrapper.dark{
+        background-color: var(--dark-unitBg);
+    }
+    .unit__title{
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--unitTitle);
+        margin: 0;
+    }
+    .unit__title.dark{
+        color: var(--dark-unitTitle);
+    }
+    .unit__result{
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--unitText);
+        margin: 0;
+    }
+    .unit__result.dark{
+        color: var(--dark-unitText);
+    }
