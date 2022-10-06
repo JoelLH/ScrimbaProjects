@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/burger-fav.png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Restauran Menu | Joel Webdev</title>
+</head>
+<body>
+    <div class="menu">
+        <header class="menu__header">
+        </header>
+        <div class="menu__body" >
+            <div class="menu__items" id="menu__items">
+
+            </div>
+            <div class="menu__order" id="menu__order">
+                
+            </div>
+            <div class="modal" id="modal">
+                <h2 class="item-title modal-title">Enter card details</h2>
+                <form action="#" class="modal-form">
+                    <input type="text" placeholder="Enter your name"
+                    name="name" required>
+                    <input type="number" placeholder="Enter card number"
+                    name="card-number" required>
+                    <input type="number" max="999" placeholder="Enter CVV"
+                    name="CCV" required>
+                    <button class="order-btn" id="pay-btn" >
+                        Pay
+                    </button>
+                </form>
+            </div>
+            <p class="menu__thanks" id="thanks">
+                Thanks, James! Your order is on its way!
+            </p>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
