@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+/* LAYOUT */
+
+main .container{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+.container{
+    max-width: 550px;
+    min-width: 345px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    height: 81px;
+    background-color: white;
+    padding: 20px 23px;
+}
+header img{
+    cursor: pointer;
+}
+.profile-ico{ width: 32.3px; height: 34px;}
+.logo{width: 84px; height: 42px;}
+.chat-ico{width: 34px; height: 34px;}
+
+.app-image-container{
+    padding: 0 8px;
+    position: relative;
+}
+
+.app-image-container.swipeLeft{
+    animation: swipeLeft 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+.app-image-container.swipeRight{
+    animation: swipeRight 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+@keyframes swipeLeft {
+    from{
+        transform:  rotate(0deg);
+        transform-origin: bottom left;
+    }
+    to{
+        transform: rotate(-20deg);
+        transform-origin: bottom left;
+    }
+    
+}
+@keyframes swipeRight {
+    from {
+        transform: rotate(0deg);
+        transform-origin: bottom right;
+    }
+
+    to {
+        transform: rotate(20deg);
+        transform-origin: bottom right;
+    }
+
+}
+
+.user-img{
+    border-radius: 15px;
+    height: 751.4px;
+    
+}
+.user-description, .badge-container{
+    position: absolute;
+}
+.user-description > *{ margin: 0;}
+
+.user-description{
+    bottom: 16.5px;
+    left: 22px;
+    right: 22px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+}
+
+.user-bio{
+    color: #B7B7B7;
+}
+
+.badge-container{
+    top: 65px;
+    left: 20px;
+    transform: rotate(320deg);
+}
+.badge-container img{
+    width: 234px;
+    height: 116.3px;
+    display: none;
+}
+.badge-container .show-badge{
+    display: block;
+}
+.button-container,
+.main-btn{
+    display: flex;
+    justify-content: center;
+}
+.button-container {
+    gap: 24.1px;
+    padding: 24.2px 0;
+
+}
+
+.main-btn{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    align-items: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.button-container  img{
+    width: 40.8px;
+    height: 36px;
+    pointer-events: none;
+}
+.accept-btn:hover{
+    background: #DBFFF4;
+}
+.reject-btn:hover{
+    background: #FFE7EF;
+}
+
+.end-section{
+    padding: 10px;
+    text-align: center;
+}
+.end-section img{
+    height: 500px;
+}
+
+@media screen and (max-width: 540px) {
+    .user-img{
+        aspect-ratio: 1/1.4;
+        height: unset;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 4.8vw;
+    }
+}
