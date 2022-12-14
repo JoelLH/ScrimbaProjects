@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Sheme Generator</title>
+</head>
+<body>
+    <div class="attribution">
+        <p>Coded by <a href="https://joelwebdev-portfolio.netlify.app/" id="developer">Joel WebDev</a></p>
+    </div>
+    <div class="app">
+        <section class="header">
+            <form action="#" id="color-form">
+                <input type="color" id="color" name="color" value="#F55A5A">
+                <select id="scheme" name="scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">
+                        Monochrome-dark
+                    </option>
+                    <option value="monochrome-light">
+                        Monochrome-light
+                    </option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">
+                        Analogic-complement
+                    </option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="get-color-scheme">Get color scheme</button>
+            </form>
+        </section>
+        <section class="body" id="body">
+            <!-- color divs added by javascript -->
+        </section>
+        <section class="footer" id="footer">
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
