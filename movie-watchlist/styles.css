@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 19px;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h1{
+    font-size: 2.625rem;
+}
+
+p,
+header button,
+header input{
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.movie-title{
+    font-size: 1.125rem;
+}
+
+.movie-info{
+    font-size: 0.75rem;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    border-left: 1px solid #D1D5DB;
+    border-right: 1px solid #D1D5DB;
+}
+
+/* LAYOUT */
+
+header{
+    width: 100%;
+    height: 30vh;
+    color: white;
+    background: #1f1f1f url(/images/THJJRUhNlEc.png) center/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8.37% 0 7.80%;
+    position: relative;
+}
+header a{
+    font-weight: 700;
+    text-align: right;
+    border: none;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+header a:hover{
+    border: 1px solid white;
+}
+
+header form{
+    display: flex;
+    width: 84%;
+    position: absolute;
+    bottom: -17.5px;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+
+form input,
+form button{
+    font-weight: 500;
+    border: none;
+}
+
+form input{
+    flex-grow: 1;
+    padding: 0 21px 0 41px;
+    background: url(/images/search-ico.png) 2% no-repeat;
+    color: #6B7280;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    width: 120px;
+    border-left: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+    padding: 9px 11px 9px 17px;
+    color: #374151;
+}
+
+form button:hover{
+    filter: brightness(.93);
+    cursor: pointer;
+}
+
+main{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    padding: 9.2% 8.37% 0;
+}
+
+main .watermark{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+.watermark img{
+    width: 70px;
+    height: 61.2px;
+}
+.watermark p{
+    color: #dfdddd;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 8.75px;
+}
+
+.watermark a{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.watermark a img{
+    width: 18px;
+    height: 18px;
+}
+/* MOVIE ITEM */
+
+.movie-card,
+.movie-header,
+.rating-box,
+.movie-info,
+.watchlist-btn{
+    display: flex;
+    align-items: center;
+}
+
+.movie-card{
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 2px solid #E5E7EB;
+}
+.movie-card .movie-img{
+    width: 18vw;
+    max-width: 200px;
+    display: block;
+    border-radius: 4px;
+    aspect-ratio: 1/1.5;
+}
+
+.movie-info-outer{
+    flex-grow: 1;
+}
+.movie-header{
+    gap: 8px;
+}
+.movie-title{
+    font-weight: 500;
+}
+
+.rating-box{
+    gap: 4px;
+}
+
+.rating-box img{
+    width: 15px;
+    height: 15px;
+}
+
+.duration{
+    margin-right: 19px;
+}
+
+
+.watchlist-btn{
+    border: none;
+    background-color: inherit;
+    gap: 5px; 
+    margin-left: auto;
+    margin-right: 10%;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+.watchlist-btn:hover{
+    border: 1px solid #6B7280;
+}
+
+.watchlist-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.watchlist-btn .remove-class, 
+.watchlist-btn.added .add-class{
+    display: none;
+}
+
+.watchlist-btn.added .remove-class{
+    display: block;
+}
+
+.watchlist-btn > * {
+    pointer-events: none;
+}
+
+.movie-body{
+    color: #6B7280;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 700px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+    .movie-card{
+        flex-flow: column;
+    }
+
+    .movie-img{
+        min-width: 120px;
+    }
+}
