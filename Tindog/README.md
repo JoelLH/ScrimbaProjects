@@ -1,6 +1,6 @@
 # Scrimba - Tindog
 
-![Design preview for the E-commerce product page coding challenge](./desktop-preview.jpg)
+![Design preview for the E-commerce product page coding challenge](./twindog-joewebdev.png)
 
 ## Welcome! 👋
 
