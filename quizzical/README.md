@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [Github Source Code](https://github.com/JoelLH/ScrimbaProjects/tree/main/quizzical)
 - Live Site URL: [Quizzical Live URL](https://quizzical-joelwebdev.netlify.app/)
 
 ## My process
